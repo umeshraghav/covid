@@ -1,6 +1,11 @@
  *{
      margin: 0;
  }
+ .app{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 20px;
+ }
  .app_header{
      display: flex;
      align-items: center;
@@ -9,8 +14,41 @@
 
  }
 
-.app_stats{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+ .app_stats{
+    display: flex;
+    justify-content: space-between;
  }
+
+ .left{
+     flex:0.9;
+ }
+ .table{
+     margin-top: 15px;
+     height: 280px;
+     overflow: scroll;
+     scrollbar-width: 0;
+     scroll-behavior: smooth;
+     color : #6a5d5d
+ }
+
+ .table tr{
+     display: flex;
+     justify-content: space-between;
+ }
+ .table td{
+     padding: 0.5rem;
+ }
+
+ .table tr:nth-of-type(odd){
+     background-color: #dff9fb;
+ }
+
+
+ body{
+     background-color: #f5f6fa;
+ }
+ @media   (max-width: 600px) {
+    .app {
+     flex-direction: column;
+    }
+  }

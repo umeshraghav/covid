@@ -10,7 +10,7 @@ export default function InfoBox({title, cases, total}) {
                    </Typography>
 
                    <Typography className="infoBox_total"  color="textSecondary">
-                   {total} total
+                   {total}   Total
                    </Typography>
                    
                 </CardContent>
